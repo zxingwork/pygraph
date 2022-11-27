@@ -57,3 +57,9 @@ class Graph(Generic[V]):
     def neighbors_for_vertex(self, vertex: V):
         return self.neighbors_for_index(self.index_of(vertex))
 
+    def edges_for_index(self, index:int):
+        return self._edges[index]
+
+    def edges_for_vertex(self, vertex:V):
+        return self.edges_for_index(self.index_of(vertex))
+
